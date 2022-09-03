@@ -1,0 +1,73 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/andrey/RiderProjects/csharp-class1/Task2/Task2.csproj": {}
+  },
+  "projects": {
+    "/home/andrey/RiderProjects/csharp-class1/Task2/Task2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/andrey/RiderProjects/csharp-class1/Task2/Task2.csproj",
+        "projectName": "Task2",
+        "projectPath": "/home/andrey/RiderProjects/csharp-class1/Task2/Task2.csproj",
+        "packagesPath": "/home/andrey/.nuget/packages/",
+        "outputPath": "/home/andrey/RiderProjects/csharp-class1/Task2/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/andrey/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.1.0, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.2, )",
+              "autoReferenced": true
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.2.1, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/current/sdk/6.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

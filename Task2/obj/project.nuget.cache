@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "3gHFuXHMDVG0o/yH6vRKu7aGJjXMbHo3eM9KQrRRRrfSbGy9qSa8GaWBXr+1srERAGx5YN4uhhWOyzYJ9IGOBQ==",
+  "success": true,
+  "projectFilePath": "/home/andrey/RiderProjects/csharp-class1/Task2/Task2.csproj",
+  "expectedPackageFiles": [
+    "/home/andrey/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
+    "/home/andrey/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",
+    "/home/andrey/.nuget/packages/microsoft.net.test.sdk/17.1.0/microsoft.net.test.sdk.17.1.0.nupkg.sha512",
+    "/home/andrey/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.2/microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "/home/andrey/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.2/microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512",
+    "/home/andrey/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
+    "/home/andrey/.nuget/packages/nunit.analyzers/3.3.0/nunit.analyzers.3.3.0.nupkg.sha512",
+    "/home/andrey/.nuget/packages/nunit3testadapter/4.2.1/nunit3testadapter.4.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}
