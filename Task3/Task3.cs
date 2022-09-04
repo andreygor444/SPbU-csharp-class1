@@ -43,14 +43,21 @@ namespace Task3
          * Вернуть ориентацию локатора после выполнения этих команд.
          */
 
-        internal static char Rotate1(char orientation, int cmd1, int cmd2)
-        {
-            
-        }
-
         internal static char Rotate2(char orientation, int cmd1, int cmd2)
         {
-            throw new NotImplementedException();
+            var d = new Dictionary<char, int>();
+            d.Add('С', 0);
+            d.Add('В', 1);
+            d.Add('Ю', 2);
+            d.Add('З', 3);
+            var dR = new Dictionary<int, char>();
+            dR.Add(0, 'С');
+            dR.Add(1, 'В');
+            dR.Add(2, 'Ю');
+            dR.Add(3, 'З');
+            var x = d[orientation];
+            x = (x - cmd1 - cmd2 + 8) % 4;
+            return dR[x];
         }
 
 /*
@@ -64,13 +71,76 @@ namespace Task3
  */
         internal static String AgeDescription(int age)
         {
-            throw new NotImplementedException();
+            string ans = "";
+            switch (age / 10)
+            {
+                case 2:
+                {
+                    ans += "двадцать ";
+                    break;
+                }
+                case 3:
+                {
+                    ans += "тридцать ";
+                    break;
+                }
+                case 4:
+                {
+                    ans += "сорок ";
+                    break;
+                }
+                case 5:
+                {
+                    ans += "пятьдесят ";
+                    break;
+                }
+                case 6:
+                {
+                    ans += "шестьдесят ";
+                    break;
+                }
+            }
+            if (age % 10 == 1)
+            {
+                ans += "один год";
+            } else if (age % 10 == 2)
+            {
+                ans += "два года";
+            } else if (age % 10 == 3)
+            {
+                ans += "три года";
+            } else if (age % 10 == 4)
+            {
+                ans += "четыре года";
+            } else if (age % 10 == 5)
+            {
+                ans += "пять лет";
+            } else if (age % 10 == 6)
+            {
+                ans += "шесть лет";
+            } else if (age % 10 == 7)
+            {
+                ans += "семь лет";
+            } else if (age % 10 == 8)
+            {
+                ans += "восемь лет";
+            } else if (age % 10 == 9)
+            {
+                ans += "девять лет";
+            } else if (age % 10 == 0)
+            {
+                ans += "лет";
+            }
+
+            return ans;
         }
 
         public static void Main(string[] args)
         {
-            throw new NotImplementedException(
-                "Вызовите здесь все перечисленные в классе функции, как это сделано в предыдущих заданиях");
+            F(3.14);
+            NumberOfDays(123322000);
+            Rotate2('С', 1, 2);
+            AgeDescription(23);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Numerics;
+using NUnit.Framework.Constraints;
 
 namespace Task5
 {
@@ -48,12 +49,35 @@ namespace Task5
 
         internal static BigInteger Fib(int n)
         {
-            throw new NotImplementedException();
+            if (n < 2) return n;
+            else if (n<3) return 1;
+            BigInteger a, c = 1, l = 1, ll = 0;
+            n -= 2;
+            while (n > 0)
+            {
+                a = c + l;
+                ll = l;
+                l = c;
+                c = a;
+                --n;
+            }
+
+            return c;
         }
 
         internal static void ComputeFib(string[] args)
         {
-            throw new NotImplementedException();
+            int n;
+            if (args.Length == 1)
+            {
+                n = Int32.Parse(args[0]);
+            }
+            else
+            {
+                n = Int32.Parse(Console.ReadLine());
+            }
+
+            Console.WriteLine(Fib(n));
         }
     }
 }
